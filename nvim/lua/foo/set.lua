@@ -1,22 +1,3 @@
-local function sync_tmux_colors()
-  if vim.env.TMUX == nil then
-    return
-  end
-  local bg = vim.api.nvim_get_hl(0, { name = "Normal" }).bg
-  local bg_hex = bg and string.format("#%06x", bg) or "#2e3440"
-  vim.fn.system(string.format("tmux set -g status-style 'bg=%s'", bg_hex))
-end
-
-vim.api.nvim_create_autocmd({ "ColorScheme", "VimEnter" }, {
-  callback = sync_tmux_colors,
-})
-
-vim.api.nvim_create_autocmd("VimLeave", {
-  callback = function()
-    vim.fn.system("tmux set -g status-style default")
-  end,
-})
-
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
@@ -46,3 +27,29 @@ vim.opt.mousescroll = "ver:1,hor:1"
 vim.g.netrw_banner = 0
 
 vim.opt.fillchars:append({ eob = " " })
+
+--[[local function enable_transparency()
+  local hl_groups = {
+    "Normal",
+    "NormalNC",
+    "NormalFloat",
+    "FloatBorder",
+    "SignColumn",
+    "LineNr",
+    "CursorLineNr",
+    "FoldColumn",
+    "StatusLine",
+    "StatusLineNC",
+  }
+
+  for _, group in ipairs(hl_groups) do
+    vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
+  end
+end
+
+enable_transparency()
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = enable_transparency,
+})--]]

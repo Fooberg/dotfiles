@@ -18,7 +18,8 @@ vim.g.colors_name = 'bones'
 
 local set = vim.api.nvim_set_hl
 
-set(0, 'Normal', { fg = colors.fg, bg = colors.bg })
+set(0, 'Normal', { fg = colors.fg, bg = none })
+set(0, 'NormalFloat', { fg = colors.fg, bg = none })
 set(0, 'Keyword', { fg = colors.pink }) 
 set(0, 'Function', { fg = colors.blue }) 
 set(0, 'String', { fg = colors.green })

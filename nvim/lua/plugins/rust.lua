@@ -1,7 +1,7 @@
 return {
   {
     'mrcjkb/rustaceanvim',
-    lazy = false, -- rustaceanvim manages its own lazy loading
+    lazy = false, 
     init = function()
         vim.g.rustaceanvim = {
             server = {
