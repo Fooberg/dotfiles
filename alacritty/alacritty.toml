@@ -1,0 +1,37 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 5
+
+opacity = 0.80
+blur = true
+
+startup_mode = "Maximized"
+decorations = "Buttonless"
+option_as_alt = "OnlyLeft"
+
+[cursor]
+style = { shape = "Block", blinking = "Never" }
+
+[font]
+normal.family = "JetbrainsMono Nerd Font"
+size = 25 
+
+[colors.primary]
+background = "#1a1a1b"
+foreground = "#c8c8cc"
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.normal]
+black = "#665c54"
+blue = "#7daea3"
+cyan = "#7daea3"
+green = "#89b665"
+magenta = "#d3869b"
+red = "#ea6962"
+white = "#c8c8cc"
+yellow = "#d8a657"
