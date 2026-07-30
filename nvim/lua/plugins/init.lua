@@ -30,7 +30,7 @@ return {
             local dashboard = require('alpha.themes.dashboard')
             dashboard.section.buttons.val = {
                 dashboard.button("f", "Find files",    ":Telescope find_files<CR>"),
-                dashboard.button("c", "Plugin config",    ":e ~/.config/nvim/lua/plugins/init.lua<CR>"),
+                dashboard.button("c", "Plugin config",    ":e ~/dotfiles/nvim/lua/plugins/init.lua<CR>"),
             }
             alpha.setup(dashboard.config)
         end,
