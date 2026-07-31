@@ -3,6 +3,9 @@ return {
     'mrcjkb/rustaceanvim',
     lazy = false, 
     init = function()
+        vim.diagnostic.config({
+            underline = false,
+        })
         vim.g.rustaceanvim = {
             server = {
                 default_settings = {
