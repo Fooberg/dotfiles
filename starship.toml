@@ -5,7 +5,7 @@ add_newline = false
 disabled = true
 
 [directory]
-style = "fg:#d4be98"
+style = "fg:#7daea3"
 truncate_to_repo = false
 
 [character]
