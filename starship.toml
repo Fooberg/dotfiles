@@ -1,12 +1,17 @@
-format = "$directory$character"
+format = "$directory$git_branch$character"
 add_newline = false
 
 [line_break]
 disabled = true
 
 [directory]
-style = "fg:#7daea3"
+style = "fg:#e0a5a2"
 truncate_to_repo = false
+truncation_length = 0
+
+[git_branch]
+format = "[git:\\(](fg:#add3db)[$branch](fg:#de7f9c)[\\)](fg:#add3db) "
+style = "fg:#d8a657"
 
 [character]
 success_symbol = "[\\$](fg:white) "
@@ -16,9 +21,6 @@ error_symbol = "[\\$](fg:white) "
 disabled = true
 
 [package]
-disabled = true
-
-[git_branch]
 disabled = true
 
 [git_status]

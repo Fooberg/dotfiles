@@ -4,7 +4,7 @@ TERM = "xterm-256color"
 [window]
 padding.x = 5
 
-opacity = 0.87
+opacity = 0.85
 blur = true
 
 startup_mode = "Maximized"
@@ -19,7 +19,7 @@ normal.family = "JetbrainsMono Nerd Font"
 size = 25 
 
 [colors.primary]
-background = "#1a1a1b"
+background = "#111111"
 foreground = "#c8c8cc"
 
 [colors.cursor]
