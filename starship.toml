@@ -5,17 +5,17 @@ add_newline = false
 disabled = true
 
 [directory]
-style = "fg:#e0a5a2"
+style = "fg:#7daea3"
 truncate_to_repo = false
 truncation_length = 0
 
 [git_branch]
-format = "[git:\\(](fg:#add3db)[$branch](fg:#de7f9c)[\\)](fg:#add3db) "
+format = "[git:\\(](fg:#c4dfee)[$branch](fg:#de7f9c)[\\)](fg:#c4dfee) "
 style = "fg:#d8a657"
 
 [character]
-success_symbol = "[\\$](fg:white) "
-error_symbol = "[\\$](fg:white) "
+success_symbol = "[\\$](fg:#c4dfee) "
+error_symbol = "[\\$](fg:c4dfee) "
 
 [cmd_duration]
 disabled = true
