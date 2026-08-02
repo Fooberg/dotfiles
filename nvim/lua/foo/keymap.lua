@@ -22,9 +22,6 @@ vim.keymap.set('n', '<leader>n', ':tabnext<CR>', opts)
 
 vim.keymap.set("v", "p", '"_dP')
 
-vim.keymap.set({ 'n', 'v' }, '<ScrollWheelDown>', '3j', opts)
-vim.keymap.set({ 'n', 'v' }, '<ScrollWheelUp>', '3k', opts)
-
 vim.keymap.set({ 'n', 'v' }, '<Esc>', ':noh<CR>', opts)
 
 vim.keymap.set("n", "<leader>tl", "<cmd>botright split | terminal<CR>", opts)

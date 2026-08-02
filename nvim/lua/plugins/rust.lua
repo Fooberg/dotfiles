@@ -10,6 +10,11 @@ return {
             server = {
                 default_settings = {
                     ["rust-analyzer"] = {
+                        completion = {
+                            callable = {
+                                snippets = "add_parentheses",
+                            },
+                        },
                         inlayHints = {
                             enable = false,
                         },
