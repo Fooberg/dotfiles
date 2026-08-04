@@ -51,7 +51,7 @@ set(0, 'LazyCommit', { fg = colors.blue })
 set(0, 'LazyError', { fg = colors.red }) 
 
 set(0, 'netrwDir', { fg = colors.blue }) 
-set(0, 'netrwClassify', { fg = colors.blue }) 
+set(0, 'netrwClassify', { fg = colors.red }) 
 
 set(0, 'BlinkCmpMenu', { bg = "#3c3836" }) 
 
