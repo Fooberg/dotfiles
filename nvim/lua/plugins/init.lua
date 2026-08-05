@@ -14,14 +14,9 @@ return {
         opts = {}
     },
 
-    { 'mrcjkb/rustaceanvim',
-	    version = '^8',
- 	    lazy = false,
-    },
-
     { 'windwp/nvim-autopairs',
- 	    event = "InsertEnter",
-    	config = true
+        event = "InsertEnter",
+        config = true
     },
 
     { 'goolord/alpha-nvim',
