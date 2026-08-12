@@ -14,7 +14,6 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz', opts)
 vim.keymap.set('n', '<C-u>', '<C-u>zz', opts)
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files)
-vim.keymap.set('n', '<leader>fg', builtin.live_grep)
 
 vim.keymap.set('n', '<leader>to', ':tabnew<CR>', opts)
 vim.keymap.set('n', '<leader>tc', ':tabclose<CR>', opts)
