@@ -27,29 +27,3 @@ vim.opt.mousescroll = "ver:1,hor:1"
 vim.g.netrw_banner = 0
 
 vim.opt.fillchars:append({ eob = " " })
-
---[[local function enable_transparency()
-  local hl_groups = {
-    "Normal",
-    "NormalNC",
-    "NormalFloat",
-    "FloatBorder",
-    "SignColumn",
-    "LineNr",
-    "CursorLineNr",
-    "FoldColumn",
-    "StatusLine",
-    "StatusLineNC",
-  }
-
-  for _, group in ipairs(hl_groups) do
-    vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
-  end
-end
-
-enable_transparency()
-
-vim.api.nvim_create_autocmd("ColorScheme", {
-  pattern = "*",
-  callback = enable_transparency,
-})--]]
