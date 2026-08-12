@@ -24,6 +24,4 @@ vim.opt.statusline = ' %f %m%=%l:%c '
 
 vim.opt.mousescroll = "ver:1,hor:1"
 
-vim.g.netrw_banner = 0
-
 vim.opt.fillchars:append({ eob = " " })
