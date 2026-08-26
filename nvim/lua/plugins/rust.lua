@@ -1,6 +1,5 @@
 return {
-  {
-    'mrcjkb/rustaceanvim',
+  { 'mrcjkb/rustaceanvim',
     lazy = false, 
     init = function()
         vim.diagnostic.config({

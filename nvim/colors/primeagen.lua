@@ -13,7 +13,7 @@ local colors = {
 vim.cmd 'highlight clear'
 vim.cmd 'syntax reset'
 vim.o.background = 'dark'
-vim.g.colors_name = 'bones'
+vim.g.colors_name = 'gruvscheme'
 
 local set = vim.api.nvim_set_hl
 
