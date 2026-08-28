@@ -7,3 +7,4 @@ fi
 eval "$(/opt/homebrew/bin/brew shellenv)" 2>/dev/null || eval "$(/usr/local/bin/brew shellenv)"
 
 export PATH="$HOME/.cargo/bin:$PATH"
+fastfetch

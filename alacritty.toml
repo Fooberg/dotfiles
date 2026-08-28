@@ -5,11 +5,11 @@ TERM = "xterm-256color"
 padding.x = 20
 padding.y = 10 
 
-#opacity = 0.8
+#opacity = 0.75
 #blur = true
 
 startup_mode = "Maximized"
-decorations = "Buttonless"
+decorations = "None"
 option_as_alt = "OnlyLeft"
 
 [cursor]
@@ -17,7 +17,7 @@ style = { shape = "Block", blinking = "Never" }
 
 [font]
 normal.family = "Iosevka Nerd Font"
-size = 25 
+size = 25
 
 [colors.primary]
 background = "#282828"
@@ -28,11 +28,11 @@ cursor = "CellForeground"
 text = "CellBackground"
 
 [colors.normal]
-black   = '#1a1a1b'
-red     = '#cc241d'
-green   = '#b8bb26'
-yellow  = '#fabd2f'
-blue    = '#83a598'
+black = '#1a1a1b'
+red = '#cc241d'
+green = '#b8bb26'
+yellow = '#fabd2f'
+blue = '#83a598'
 magenta = '#d3869b'
-cyan    = '#8ec07c'
-white   = '#f2e9e1'
+cyan = '#8ec07c'
+white = '#f2e9e1'
