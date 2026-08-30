@@ -12,8 +12,8 @@ sketchybar --bar position=top height=40 blur_radius=30 color=$BAR_COLOR
 default=(
   padding_left=1
   padding_right=1
-  icon.font="Iosevka Nerd Font:Semibold:18"
-  label.font="Iosevka Nerd Font:Semibold:18.0"
+  icon.font="JetBrainsMono Nerd Font:Bold:18"
+  label.font="JetBrainsMono Nerd Font:Bold:18"
   icon.color=$WHITE
   label.color=$WHITE
   background.color=$ACCENT_COLOR      \
@@ -28,12 +28,12 @@ default=(
 sketchybar --default "${default[@]}"
 
 sketchybar --add item calendar right \
-           --set calendar icon.drawing=off \
-                          background.color=$BAR_COLOR \
-                          label.color=$WHITE \
-                          padding_left=5 \
-                          update_freq=30 \
-                          script="$PLUGIN_DIR/calendar.sh" \
+    --set calendar icon.drawing=off \
+    background.color=$BAR_COLOR \
+    label.color=$WHITE \
+    padding_left=5 \
+    update_freq=30 \
+    script="$PLUGIN_DIR/calendar.sh" \
 
 #sketchybar --add item battery right \
 #           --set battery update_freq=120 \
@@ -65,5 +65,6 @@ sketchybar --add item space_separator left \
            --set space_separator icon.drawing=off \
                                  label.drawing=off \
                                  background.drawing=off
+
 
 sketchybar --update
