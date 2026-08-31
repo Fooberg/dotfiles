@@ -13,9 +13,9 @@ fi
 
 if [ "$SID" = "$FOCUSED" ]; then
   sketchybar --set space.$SID background.drawing=on \
-                              background.color=$ACCENT_COLOR \
-                              icon.color=$BAR_COLOR
+                              background.color=$BAR_COLOR \
+                              icon.color=$WHITE
 else
   sketchybar --set space.$SID background.drawing=off \
-                              icon.color=$ACCENT_COLOR
+                              icon.color=$GRAY
 fi
